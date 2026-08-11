@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natasha Onion Kingdom</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background:
+            radial-gradient(circle at top, rgba(255,235,160,.35), transparent 35%),
+            linear-gradient(135deg, #f5e6bd 0%, #ead4a0 45%, #d8c2e5 100%);
+        color: #40284f;
+        font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+        min-height: 100vh;
+    }
+
+    .marquee-wrap {
+        overflow: hidden;
+        white-space: nowrap;
+        background: #5d3575;
+        color: #ffe7a3;
+        border-bottom: 4px solid #d8a83e;
+        box-shadow: 0 4px 12px rgba(55,30,70,.25);
+    }
+
+    .marquee {
+        display: inline-block;
+        padding: 14px 0;
+        font-size: 1.35rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        animation: scroll 16s linear infinite;
+    }
+
+    @keyframes scroll {
+        from { transform: translateX(100%); }
+        to { transform: translateX(-100%); }
+    }
+
+    header {
+        text-align: center;
+        padding: 45px 20px 30px;
+    }
+
+    .crown {
+        font-size: 4rem;
+        filter: drop-shadow(0 3px 2px rgba(0,0,0,.2));
+    }
+
+    h1 {
+        margin: 8px 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2.3rem, 7vw, 5rem);
+        color: #5d3575;
+        text-shadow: 2px 2px 0 #f8d879, 4px 4px 0 rgba(75,40,90,.15);
+    }
+
+    .subtitle {
+        font-family: Georgia, serif;
+        font-size: 1.2rem;
+        color: #76513e;
+    }
+
+    main {
+        width: min(1100px, 92%);
+        margin: 0 auto 50px;
+    }
+
+    .royal-card {
+        background: rgba(255,248,225,.88);
+        border: 3px solid #d8a83e;
+        border-radius: 24px;
+        padding: 26px;
+        margin: 25px 0;
+        box-shadow: 0 10px 28px rgba(64,40,79,.18);
+    }
+
+    .royal-card h2 {
+        margin-top: 0;
+        color: #5d3575;
+        font-family: Georgia, serif;
+        font-size: 2rem;
+    }
+
+    .intro {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 22px;
+    }
+
+    .image-box {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        background:
+            linear-gradient(135deg, #d9c3e5, #f6df9d);
+        border: 4px solid #b9822d;
+        border-radius: 18px;
+        box-shadow: inset 0 0 0 2px rgba(255,255,255,.55),
+                    0 7px 18px rgba(64,40,79,.2);
+    }
+
+    .image-box img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .image-label {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: rgba(70,39,83,.82);
+        color: #ffe7a3;
+        font-weight: bold;
+        font-size: .85rem;
+    }
+
+    .rules {
+        line-height: 1.7;
+    }
+
+    .rules li {
+        margin: 9px 0;
+    }
+
+    .royal-button {
+        display: inline-block;
+        padding: 14px 24px;
+        border-radius: 999px;
+        background: linear-gradient(#f3cf68, #c99531);
+        color: #40284f;
+        text-decoration: none;
+        font-weight: bold;
+        border: 2px solid #81591e;
+        box-shadow: 0 4px 0 #81591e;
+        transition: transform .15s, box-shadow .15s;
+    }
+
+    .royal-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 0 #81591e;
+    }
+
+    .discord {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 15px 45px;
+        color: #654b70;
+        font-family: Georgia, serif;
+    }
+
+    .onion {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            padding-top: 30px;
+        }
+
+        .royal-card {
+            padding: 18px;
+        }
+
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="marquee-wrap">
+    <div class="marquee">
+        ✦ 👑 Welcome to the Natasha Onion Kingdom 👑 ✦ &nbsp;&nbsp;&nbsp;
+        All Hail the Onion Queen! 🧅 ✦
+    </div>
+</div>
+
+<header>
+    <div class="crown">👑</div>
+    <h1>Natasha Onion Kingdom</h1>
+    <div class="subtitle">A magical realm devoted to the Onion Queen</div>
+</header>
+
+<main>
+
+    <section class="royal-card intro">
+        <h2>🧅 Welcome, Royal Subject</h2>
+        <p>
+            Enter the enchanted kingdom of Natasha Onion, where golden onions
+            glow beneath the lanterns, purple crowns reign supreme, and the
+            Onion Queen watches over her magnificent realm.
+        </p>
+        <p>
+            <strong>All hail Natasha Onion, Queen of the Golden Onion Kingdom!</strong>
+        </p>
+    </section>
+
+    <section class="royal-card">
+        <h2>👑 The Onion Queen</h2>
+
+        <div class="gallery">
+            <div class="image-box">
+                <img src="natashaonion.png"
+                     alt="Natasha Onion"
+                     onerror="this.style.display='none'">
+                <div class="image-label">Natasha Onion</div>
+            </div>
+
+            <div class="image-box">
+                <img src="natashaonionqueen.png"
+                     alt="Natasha Onion Queen"
+                     onerror="this.style.display='none'">
+                <div class="image-label">The Onion Queen</div>
+            </div>
+
+            <div class="image-box">
+                <img src="natashaonionportraits.png"
+                     alt="Natasha Onion portraits"
+                     onerror="this.style.display='none'">
+                <div class="image-label">Royal Portraits</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="royal-card">
+        <h2>📜 Royal Decrees</h2>
+        <ul class="rules">
+            <li>All citizens shall respect the Onion Queen.</li>
+            <li>Golden onions are considered treasures of the kingdom.</li>
+            <li>Onion crowns are highly encouraged.</li>
+            <li>Royal flags may be waved dramatically at any time.</li>
+            <li>Most importantly: <strong>All Hail Natasha Onion!</strong></li>
+        </ul>
+    </section>
+
+    <section class="royal-card discord">
+        <h2>🏰 Enter the Royal Discord</h2>
+
+        <!-- Replace # with your Discord invite later -->
+        <a class="royal-button" href="https://discord.gg/6GCJ6BktXc" target="_blank" rel="noopener">
+            👑 Enter the Kingdom
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    <div class="onion">🧅 ✦ 👑 ✦ 🧅</div>
+    <p>Long may the Onion Queen reign.</p>
+    <p>© Natasha Onion Kingdom</p>
+</footer>
+
+</body>
+</html>
